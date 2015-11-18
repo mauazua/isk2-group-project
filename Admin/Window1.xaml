@@ -1,0 +1,9 @@
+﻿<Window x:Class="Admin.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Name="oknoPoZalogowaniu"
+        Title="Panel Administracyjny"
+        Width="800"
+        Height="400">
+    <Grid x:Name="win1" />
+</Window>
