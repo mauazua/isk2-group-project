@@ -4,6 +4,36 @@
         x:Name="oknoPoZalogowaniu"
         Title="Panel Administracyjny"
         Width="800"
-        Height="400">
-    <Grid x:Name="win1" />
+        Height="400"
+        Icon="palmTree.ico">
+    <Window.InputBindings>
+        <KeyBinding Key="F1" Command="Help" />
+    </Window.InputBindings>
+    <Grid x:Name="win1" Margin="0,0,0,340">
+        <Menu IsMainMenu="True">
+            <MenuItem x:Name="Menu" Header="_Menu">
+                <MenuItem x:Name="logout"
+                          Click="logoutClick"
+                          Header="_Wyloguj" />
+            </MenuItem>
+            <MenuItem Header="_Edytuj">
+                <MenuItem Command="Cut" Header="Wytnij" />
+                <MenuItem Command="Copy" Header="_Kopiuj" />
+                <MenuItem Command="Paste" Header="_Wklej" />
+            </MenuItem>
+            <MenuItem Header="_Rezerwacje">
+                <MenuItem Header="Lista rezerwacji" />
+            </MenuItem>
+            <MenuItem Header="_Wycieczki">
+                <MenuItem Header="Lista wycieczek" />
+                <MenuItem Header="Dodaj wycieczkę" />
+            </MenuItem>
+            <MenuItem Header="_Pomoc">
+                <MenuItem Command="Help" Header="Pomoc programu" />
+                <Separator />
+                <MenuItem Click="ProgramInfo" Header="Informacje o programie" />
+            </MenuItem>
+        </Menu>
+    </Grid>
 </Window>
+
