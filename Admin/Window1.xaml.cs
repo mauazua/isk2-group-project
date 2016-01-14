@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +9,12 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
+using Npgsql;
+
 
 namespace Admin
 {
@@ -34,5 +38,16 @@ namespace Admin
         {
             MessageBox.Show("Panel Administracyjny - Program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek ");  
         }
+
+
+        private void Usun_Rezerwacje(object sender, RoutedEventArgs e)
+        {
+            Window3 okno = new Window3();
+
+            okno.Show();
+
+        }
+
+
     }
 }
