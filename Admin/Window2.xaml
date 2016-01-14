@@ -23,8 +23,8 @@
         <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="0.4,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
         <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="0.4,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Grid.Column="1"/>
         <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="23" Margin="0.4,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Grid.Column="1"/>
-        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="4.4,53,0,0" VerticalAlignment="Top"/>
-        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="4.4,95,0,0" VerticalAlignment="Top" Text="wwwds"/>
+        <DatePicker x:Name="datepicker1" Grid.Column="1" HorizontalAlignment="Left" Margin="4.4,53,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datepicker2" Grid.Column="1" HorizontalAlignment="Left" Margin="4.4,95,0,0" VerticalAlignment="Top" Text="wwwds"/>
         <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Height="23" Margin="0.4,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Grid.Column="1"/>
         <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="23" Margin="113,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Grid.ColumnSpan="2"/>
         <Button x:Name="Wyślij" Content="Wyślij" HorizontalAlignment="Left" Height="28" Margin="159.4,345,0,-61" VerticalAlignment="Top" Width="89" Grid.Column="1" Click="Wyślij_Click"/>
