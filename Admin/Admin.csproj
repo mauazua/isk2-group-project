@@ -99,6 +99,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="JsonHelper.cs" />
+<<<<<<< efb548df890438ef1d07ec2e0b29bdbdb6deace2
     <Compile Include="Listy.cs" />
     <Compile Include="PanelAdministracyjny.xaml.cs">
       <DependentUpon>PanelAdministracyjny.xaml</DependentUpon>
@@ -129,6 +130,11 @@
     </Compile>
     <Compile Include="Window4.xaml.cs">
       <DependentUpon>Window4.xaml</DependentUpon>
+=======
+    <Compile Include="Trip.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+>>>>>>> Poprawienie requestow, nadal na sztywno, bo bylo testowane na wewnetrznym serwerze z nasza aplikacja ruby.
     </Compile>
     <Compile Include="Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
