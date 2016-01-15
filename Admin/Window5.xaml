@@ -1,0 +1,27 @@
+﻿<Window x:Class="Admin.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Potwierdź rezerwację"
+        Width="350"
+        Height="260">
+    <Grid>
+        <Label Content="Numer klienta:" HorizontalAlignment="Left"
+               Margin="50,50,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left"
+                 Margin="170,50,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120"/>
+        <Label Content="Numer rezerwacji:" HorizontalAlignment="Left"
+               Margin="50,80,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left"
+                 Margin="170,80,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120"/>
+        <Button Content="Cofnij" HorizontalAlignment="Left"
+                Margin="50,150,0,0" VerticalAlignment="Top"
+                Width="75" Click="cofnij"/>
+        <Button Content="Potwierdź" HorizontalAlignment="Left"
+                Margin="210,150,0,0" VerticalAlignment="Top"
+                Width="75"/>
+    </Grid>
+</Window>
