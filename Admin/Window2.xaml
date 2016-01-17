@@ -1,0 +1,13 @@
+﻿<Window x:Class="Admin.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window2" Height="400" Width="600">
+    <Grid>
+        <Button Content="Cofnij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,338,0,0" Click="Button_Click_1"/>
+       
+        <Button Content="Zamknij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="507,338,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="152" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" Margin="21,144,0,0" TextChanged="TextBox_TextChanged_1"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="551" Margin="21,41,0,0"/>
+
+    </Grid>
+</Window>
