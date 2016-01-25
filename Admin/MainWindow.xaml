@@ -1,0 +1,15 @@
+﻿<Window x:Class="Admin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Logowanie" Height="300" Width="300" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Login:      1" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hasło:      1" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="180,30,0,0" VerticalAlignment="Top" Width="50" Source="palmTree.ico"/>
+        <Label Content="Login:" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="110,110,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxLogin"/>
+        <Label Content="Hasło:" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="110,150,0,0" VerticalAlignment="Top" Width="120" x:Name="PasswordBoxHaslo"/>
+        <Button Content="Zaloguj" HorizontalAlignment="Left" Margin="130,202,0,0" VerticalAlignment="Top" Width="80" Click="ButtonZaloguj"/>
+    </Grid>
+</Window>
