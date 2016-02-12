@@ -1,4 +1,4 @@
-﻿<Window x:Class="Admin.Window1"
+﻿<Window x:Class="Admin.MainMenu"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Name="oknoPoZalogowaniu"
@@ -10,7 +10,11 @@
         <KeyBinding Key="F1" Command="Help" />
     </Window.InputBindings>
     <Grid x:Name="win1" Margin="0,0,0,340">
-        <Menu IsMainMenu="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="677*"/>
+        </Grid.ColumnDefinitions>
+        <Menu IsMainMenu="True" Grid.ColumnSpan="2" Margin="0,0,-0.4,0.4">
             <MenuItem x:Name="Menu" Header="_Menu">
                 <MenuItem x:Name="logout"
                           Click="logoutClick"
@@ -22,9 +26,10 @@
                 <MenuItem Command="Paste" Header="_Wklej" />
             </MenuItem>
             <MenuItem Header="_Rezerwacje">
-               
-                <MenuItem Header="Klienci przypisani do wycieczki" Click="click3"/>
 
+                <MenuItem Header="Klienci przypisani do wycieczki" Click="click3"/>
+                <MenuItem Header="Lista rezerwacji" />
+                <MenuItem Header="Usun rezerwacje" Click="Usun_Rezerwacje" />
             </MenuItem>
             <MenuItem Header="_Wycieczki">
                 <MenuItem Header="Lista wycieczek" />
