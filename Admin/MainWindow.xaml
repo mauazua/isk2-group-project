@@ -40,7 +40,7 @@
                      Grid.Column="2"
                      Width="292"
                      Height="26"
-                     Margin="145,139,0,0"
+                     Margin="145,138,0,0"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top" />
         <Button x:Name="zaloguj"
