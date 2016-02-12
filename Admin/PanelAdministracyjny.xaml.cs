@@ -45,6 +45,7 @@ namespace Admin
         {
             Wycieczki.Items.Remove(Wycieczki.SelectedItem);
         }
+<<<<<<< c1407db69e3b8a5a755e7869729ab2dc9c539300
       
 
         private void Usun_Rezerwacje(object sender, RoutedEventArgs e)
@@ -53,6 +54,18 @@ namespace Admin
             UsunRezerwacje usun = new UsunRezerwacje();
             usun.Show();
 
+=======
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ButtonDodajKlienta(object sender, RoutedEventArgs e)
+        {
+            DodajKlienta obj = new DodajKlienta();
+            obj.Show();
+>>>>>>> Dodawanie Kliento
         }
     }
 }

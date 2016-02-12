@@ -40,5 +40,14 @@ namespace Admin
         public string Imie { get; set; }
         [DataMember]
         public string Nazwisko { get; set; }
+<<<<<<< c1407db69e3b8a5a755e7869729ab2dc9c539300
+=======
+        [DataMember]
+        public int PESEL { get; set; }
+        [DataMember]
+        public string DataUrodzenia { get; set; }
+        [DataMember]
+        public int TelKontaktowy { get; set; }
+>>>>>>> Dodawanie Kliento
     }
 }

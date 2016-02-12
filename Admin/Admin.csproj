@@ -74,7 +74,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
@@ -88,14 +87,12 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
@@ -103,8 +100,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Listy.cs" />
+    <Compile Include="PanelAdministracyjny.xaml.cs">
+      <DependentUpon>PanelAdministracyjny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodajWycieczke.xaml.cs">
+      <DependentUpon>DodajWycieczke.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodajKlienta.xaml.cs">
+      <DependentUpon>DodajKlienta.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListaWycieczek.xaml.cs">
       <DependentUpon>ListaWycieczek.xaml</DependentUpon>
@@ -134,8 +139,16 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-
     <Page Include="Window1.xaml">
+    <Page Include="PanelAdministracyjny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodajWycieczke.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodajKlienta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
