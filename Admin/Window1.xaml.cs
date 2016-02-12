@@ -34,5 +34,15 @@ namespace Admin
         {
             MessageBox.Show("Panel Administracyjny - Program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek ");  
         }
+
+        private void click3(object sender, RoutedEventArgs e)
+        {
+            Window2 obj = new Window2();
+
+
+            obj.Show(); //otwiera się nowe okno 
+            this.Hide();
+        }
+
     }
 }

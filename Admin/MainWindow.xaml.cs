@@ -51,8 +51,9 @@ namespace Admin
                  
                  !!!!PS: PÓKI CO POBIERANIE LOGINU I HASŁA Z BAZY NIE DZIAŁA - TRWAJĄ PRACE NAD TYM!!!!
                  */
-                 
+
                 if (loginTextBox.Text=="administrator" && passTextBox.Password=="123qweQWE" )
+
 
                 {
                                                     

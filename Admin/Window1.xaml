@@ -22,7 +22,9 @@
                 <MenuItem Command="Paste" Header="_Wklej" />
             </MenuItem>
             <MenuItem Header="_Rezerwacje">
-                <MenuItem Header="Lista rezerwacji" />
+               
+                <MenuItem Header="Klienci przypisani do wycieczki" Click="click3"/>
+
             </MenuItem>
             <MenuItem Header="_Wycieczki">
                 <MenuItem Header="Lista wycieczek" />
