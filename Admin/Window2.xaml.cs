@@ -32,7 +32,7 @@ namespace Admin
         private void Button_Click_1(object sender, RoutedEventArgs e)          
              
         {
-            Window1 obj = new Window1();
+            MainMenu obj = new MainMenu();
 
 
             obj.Show(); //otwiera się nowe okno 

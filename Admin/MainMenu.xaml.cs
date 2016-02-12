@@ -21,6 +21,14 @@ namespace Admin
             MessageBox.Show("Panel Administracyjny");  
         }
 
+        private void click3(object sender, RoutedEventArgs e)
+        {
+            Window2 obj = new Window2();
+
+            obj.Show();
+            Close();
+        }
+
         private void Usun_Rezerwacje(object sender, RoutedEventArgs e)
         {
 
