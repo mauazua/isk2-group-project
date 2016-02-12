@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +19,11 @@ using System.Security;
 using System.Security.Cryptography;
 namespace Admin
 {
-    
+
     public partial class MainWindow : Window
     {
 
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -39,11 +39,11 @@ namespace Admin
 
 
                 {
-                                                    
+
                     Window1 obj = new Window1();
 
-                    
-                    obj.Show(); //otwiera się nowe okno 
+
+                    obj.Show(); //otwiera się nowe okno
                     this.Hide();//okno logowania ukrywa się po poprawnym zalogowaniu
 
 
@@ -60,12 +60,12 @@ namespace Admin
 
                 MessageBox.Show("Nazwa użytkownika i hasło są wymagane");
 
-            }   
+            }
 
         }
 
-                
-            
+
+
             }
 
 }
