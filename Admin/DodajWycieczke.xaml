@@ -1,0 +1,23 @@
+﻿<Window x:Class="Admin.DodajWycieczke"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj wycieczkę" Height="420" Width="355" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Cofnij" HorizontalAlignment="Left" Margin="60,325,0,0" VerticalAlignment="Top" Width="80" Click="ButtonCofnij"/>
+        <Label Content="Nazwa wycieczki:" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,30,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxNazwaWycieczki"/>
+        <Label Content="Data rozpoczęcia:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="170,70,0,0" VerticalAlignment="Top" x:Name="DatePickerDataRozpoczecia"/>
+        <Label Content="Data zakończenia:" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="170,110,0,0" VerticalAlignment="Top" x:Name="DatePickerDataZakonczenia"/>
+        <Label Content="Miasto:" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,150,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxMiasto"/>
+        <Label Content="Kraj:" HorizontalAlignment="Left" Margin="50,190,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,190,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxKraj"/>
+        <Label Content="Cena za osobę:" HorizontalAlignment="Left" Margin="50,230,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,230,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxCenaZaOsobe"/>
+        <Label Content="Liczba miejsc:" HorizontalAlignment="Left" Margin="50,270,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,270,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxLiczbaMiejsc"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="190,325,0,0" VerticalAlignment="Top" Width="80" Click="ButtonDodaj"/>
+    </Grid>
+</Window>
