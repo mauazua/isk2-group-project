@@ -1,29 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Data.SqlClient;
-using System.Data;
-using System.Configuration;
-using System.Security;
-using System.Security.Cryptography;
 namespace Admin
 {
-    
+
     public partial class MainWindow : Window
     {
-
-        
+      
         public MainWindow()
         {
             InitializeComponent();
@@ -35,16 +17,15 @@ namespace Admin
             {
 
 
-                if (loginTextBox.Text == System.Configuration.ConfigurationManager.AppSettings["username"] && passTextBox.Password == System.Configuration.ConfigurationManager.AppSettings["password"])
+                if (loginTextBox.Text == ConfigurationManager.AppSettings["username"] && passTextBox.Password == ConfigurationManager.AppSettings["password"])
 
 
                 {
                                                     
-                    Window1 obj = new Window1();
-
-                    
-                    obj.Show(); //otwiera się nowe okno 
-                    this.Hide();//okno logowania ukrywa się po poprawnym zalogowaniu
+                    MainMenu obj = new MainMenu();
+           
+                    obj.Show();
+                    Close();
 
 
                 }
@@ -63,9 +44,7 @@ namespace Admin
             }   
 
         }
-
-                
-            
-            }
+                     
+     }
 
 }
