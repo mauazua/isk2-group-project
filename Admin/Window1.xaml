@@ -11,6 +11,11 @@
     </Window.InputBindings>
     <Grid x:Name="win1" Margin="0,0,0,340">
         <Menu IsMainMenu="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="741*"/>
+        </Grid.ColumnDefinitions>
+        <Menu IsMainMenu="True" Grid.ColumnSpan="2" Margin="0,0,-0.4,0.4">
             <MenuItem x:Name="Menu" Header="_Menu">
                 <MenuItem x:Name="logout"
                           Click="logoutClick"
@@ -26,7 +31,7 @@
             </MenuItem>
             <MenuItem Header="_Wycieczki">
                 <MenuItem Header="Lista wycieczek" />
-                <MenuItem Header="Dodaj wycieczkę" />
+                <MenuItem Header="Dodaj wycieczkę" Click="Dodaj_Wycieczke" />
             </MenuItem>
             <MenuItem Header="_Pomoc">
                 <MenuItem Command="Help" Header="Pomoc programu" />
@@ -36,4 +41,3 @@
         </Menu>
     </Grid>
 </Window>
-
