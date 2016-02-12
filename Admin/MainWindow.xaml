@@ -10,27 +10,29 @@
             <ColumnDefinition Width="34*" />
             <ColumnDefinition Width="35*" />
             <ColumnDefinition Width="723*" />
+            <ColumnDefinition Width="212*" />
+            <ColumnDefinition Width="512*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="loginTextBox"
                  Grid.Column="2"
                  Width="292"
                  Height="28"
-                 Margin="145,79,0,0"
+                 Margin="145.2,79,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
                  RenderTransformOrigin="-0.325,3.609"
                  Text=""
-                 TextWrapping="Wrap" />
+                 TextWrapping="Wrap" Grid.ColumnSpan="2" />
         <Label Grid.Column="2"
                Width="83"
-               Margin="57,79,0,0"
+               Margin="57.2,79,0,0"
                HorizontalAlignment="Left"
                VerticalAlignment="Top"
                Content="Login"
                RenderTransformOrigin="-7.684,-1.385" />
         <Label Grid.Column="2"
                Width="83"
-               Margin="57,139,0,0"
+               Margin="57.2,139,0,0"
                HorizontalAlignment="Left"
                VerticalAlignment="Top"
                Content="Hasło"
@@ -39,16 +41,14 @@
                      Grid.Column="2"
                      Width="292"
                      Height="26"
-
-                     Margin="145,139,0,0"
-
+                     Margin="145.2,139,0,0"
                      HorizontalAlignment="Left"
-                     VerticalAlignment="Top" />
+                     VerticalAlignment="Top" Grid.ColumnSpan="2" />
         <Button x:Name="zaloguj"
-                Grid.Column="2"
+                Grid.Column="3"
                 Width="92"
                 Height="32"
-                Margin="345,227,0,0"
+                Margin="132.872,227,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="zalogujClick"

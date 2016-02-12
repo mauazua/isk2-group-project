@@ -18,10 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
-<<<<<<< c1407db69e3b8a5a755e7869729ab2dc9c539300
-=======
 using Npgsql;
->>>>>>> Dodawanie Kliento
 using System.Runtime.Serialization;
 namespace Admin
 {
