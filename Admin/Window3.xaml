@@ -1,0 +1,15 @@
+﻿<Window x:Class="Admin.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lista rezerwacji"
+        Width="800"
+        Height="400"
+        Icon="palmTree.ico">
+    <Grid>
+        <Button x:Name="Analuj" Content="Cofnij"
+                HorizontalAlignment="Left"
+                Margin="80,300,0,0" VerticalAlignment="Top"
+                Width="80" Grid.ColumnSpan="2"
+                Click="cofnijClick"/>
+    </Grid>
+</Window>

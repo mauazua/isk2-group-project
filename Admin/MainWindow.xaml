@@ -53,5 +53,4 @@
                 Click="zalogujClick"
                 Content="Zaloguj" />
     </Grid>
-
 </Window>

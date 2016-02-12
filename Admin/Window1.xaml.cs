@@ -10,7 +10,11 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
+using Npgsql;
 
 namespace Admin
 {
@@ -28,11 +32,35 @@ namespace Admin
         {
             this.Hide();
             MessageBox.Show("Zostałeś poprawnie wylogowany");
-            
+
         }
         private void ProgramInfo(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Panel Administracyjny - Program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek ");  
+            MessageBox.Show("Panel Administracyjny - Program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek ");
+        }
+        private void Dodaj_Wycieczke(object sender, RoutedEventArgs e)
+        {
+            Window2 obj = new Window2();
+
+            obj.Show();
+        }
+        private void Lista_Rezerwacji(object sender, RoutedEventArgs e)
+        {
+            Window3 obj = new Window3();
+
+            obj.Show();
+        }
+        private void Potwierdz_Rezerwacje(object sender, RoutedEventArgs e)
+        {
+            Window5 okno = new Window5();
+
+            okno.Show();
+        }
+        private void Lista_Wycieczek(object sender, RoutedEventArgs e)
+        {
+            Window4 obj = new Window4();
+
+            obj.Show();
         }
     }
 }
