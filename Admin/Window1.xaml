@@ -25,7 +25,7 @@
                 <MenuItem Header="Lista rezerwacji" />
             </MenuItem>
             <MenuItem Header="_Wycieczki">
-                <MenuItem Header="Lista wycieczek" />
+                <MenuItem Header="Lista wycieczek" Click="ListaWycieczekClick"/>
                 <MenuItem Header="Dodaj wycieczkę" />
             </MenuItem>
             <MenuItem Header="_Pomoc">
@@ -36,4 +36,3 @@
         </Menu>
     </Grid>
 </Window>
-

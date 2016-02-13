@@ -1,0 +1,6 @@
+﻿<Window x:Class="Admin.Wycieczki"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wycieczki" Height="355.882" Width="277.569">
+    <ListBox x:Name="lbxListaWycieczek" HorizontalAlignment="Left" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" Width="246"/>
+</Window>
