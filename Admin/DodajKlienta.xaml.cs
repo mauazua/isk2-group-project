@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Windows.Controls;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Data;
@@ -40,31 +41,45 @@ namespace Admin
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var webAddr = "http://192.168.23.128:3000/api/events";
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
-            httpWebRequest.ContentType = "application/json; charset=utf-8";
-            httpWebRequest.Method = "POST";
 
-            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            if (TextBoxImie.Text != "" & TextBoxNazwisko.Text != "" & TextBoxPESEL.Text != "" & TextBoxTelKontaktowy.Text != "" & DatePickerDataUrodzenia.Text != "")
             {
-                ListaKlientow nowa = new ListaKlientow();
-                nowa.Imie = TextBoxImie.Text;
-                nowa.Nazwisko = TextBoxNazwisko.Text;
-                nowa.PESEL = int.Parse(TextBoxPESEL.Text);
-                nowa.DataUrodzenia = DatePickerDataUrodzenia.Text;
-                nowa.TelKontaktowy = int.Parse(TextBoxTelKontaktowy.Text);
-                
+                try
+                {
+                    var webAddr = "http://192.168.23.128:3000/api/events";
+                    var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
+                    httpWebRequest.ContentType = "application/json; charset=utf-8";
+                    httpWebRequest.Method = "POST";
 
-                string jsonString = JsonHelper.JsonSerializer(nowa);
-                streamWriter.Write(jsonString);
-                streamWriter.Flush();
+                    using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                    {
+                        ListaKlientow trip = new ListaKlientow();
+                        trip.Imie = TextBoxImie.Text;
+                        trip.Nazwisko = TextBoxNazwisko.Text;
+                        trip.PESEL = int.Parse(TextBoxPESEL.Text);
+                        trip.DataUrodzenia = DatePickerDataUrodzenia.Text;
+                        trip.TelKontaktowy = int.Parse(TextBoxTelKontaktowy.Text);
+
+
+                        string jsonString = JsonHelper.JsonSerializer(trip);
+                        streamWriter.Write(jsonString);
+                        streamWriter.Flush();
+                    }
+                    var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                    using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                    {
+                        var result = streamReader.ReadToEnd();
+                        System.Windows.MessageBox.Show(result);
+                    }
+                }
+                catch (Exception error)
+                { System.Windows.MessageBox.Show(Convert.ToString(error)); }
             }
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            else
             {
-                var result = streamReader.ReadToEnd();
-                System.Windows.MessageBox.Show(result);
+                System.Windows.MessageBox.Show("Wypełnij pola!");
             }
+
         }
     }
 }
