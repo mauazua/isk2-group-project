@@ -11,8 +11,6 @@ namespace Admin
     public class Events
     {
         [DataMember]
-        public int id { get; set; }
-        [DataMember]
         public string name { get; set; }
         [DataMember]
         public string start_date { get; set; }

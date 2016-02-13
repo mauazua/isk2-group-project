@@ -1,24 +1,10 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Net;
 using System.Windows;
-using System.Windows.Forms;
-using System.Runtime.Serialization.Json;
-using System.Text;
-using System.Windows.Controls;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Data.SqlClient;
-using System.Data;
-using System.Runtime.Serialization;
+using System.Configuration;
+using System;
+using Newtonsoft.Json;
+
 namespace Admin
 {
     public partial class DodajWycieczke : Window
@@ -30,35 +16,50 @@ namespace Admin
         }
         private void ButtonCofnij(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
         private void ButtonDodaj(object sender, RoutedEventArgs e)
         {
-            var webAddr = "http://192.168.23.128:3000/api/events";
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
-            httpWebRequest.ContentType = "application/json; charset=utf-8";
-            httpWebRequest.Method = "POST";
 
-            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            if (TextBoxNazwaWycieczki.Text != "" & TextBoxMiasto.Text != "" & TextBoxKraj.Text != "" & TextBoxCenaZaOsobe.Text != "" & TextBoxLiczbaMiejsc.Text != "" & DatePickerDataRozpoczecia.Text != "" & DatePickerDataZakonczenia.Text != "") 
             {
-                ListaWycieczek nowa = new ListaWycieczek();
-                nowa.NazwaWycieczki = TextBoxNazwaWycieczki.Text;
-                nowa.DataRozpoczecia = DatePickerDataRozpoczecia.Text;
-                nowa.DataZakonczenia = DatePickerDataZakonczenia.Text;
-                nowa.Miasto = TextBoxMiasto.Text;
-                nowa.Kraj = TextBoxKraj.Text;
-                nowa.CenaZaOsobe = int.Parse(TextBoxCenaZaOsobe.Text);
-                nowa.LiczbaMiejsc = int.Parse(TextBoxLiczbaMiejsc.Text);
+                try {
+                    var request = (HttpWebRequest)WebRequest.Create(ConfigurationManager.AppSettings["Events-URL"]);
+                    request.ContentType = "application/json; charset=utf-8";
+                    request.Method = "POST";
+                    request.Timeout = 2000;
+                    request.Headers.Add(ConfigurationManager.AppSettings["header1"], ConfigurationManager.AppSettings["token"]);
+                    request.Headers.Add(ConfigurationManager.AppSettings["header2"], ConfigurationManager.AppSettings["email"]);
 
-                string jsonString = JsonHelper.JsonSerializer(nowa);
-                streamWriter.Write(jsonString);
-                streamWriter.Flush();
+                    using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+                    {
+                        Events trip = new Events();
+                        trip.name = TextBoxNazwaWycieczki.Text;
+                        trip.start_date = DatePickerDataRozpoczecia.Text;
+                        trip.end_date = DatePickerDataZakonczenia.Text;
+                        trip.location = TextBoxMiasto.Text;
+                        trip.country = TextBoxKraj.Text;
+                        trip.price = int.Parse(TextBoxCenaZaOsobe.Text);
+                        trip.capacity = int.Parse(TextBoxLiczbaMiejsc.Text);
+
+                        var json = JsonConvert.SerializeObject(trip);
+                        streamWriter.Write(json);
+                        streamWriter.Flush();
+
+                    }
+                    var httpResponse = (HttpWebResponse)request.GetResponse();
+                    using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                    {
+                        var result = streamReader.ReadToEnd();
+                        MessageBox.Show(result);
+                    }
+                }
+                catch(Exception error)
+                { MessageBox.Show(Convert.ToString(error)); }
             }
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            else
             {
-                var result = streamReader.ReadToEnd();
-                System.Windows.MessageBox.Show(result);
+                MessageBox.Show("Wypełnij wszystkie pola!");
             }
         }
     }
