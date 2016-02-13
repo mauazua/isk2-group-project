@@ -1,11 +1,17 @@
-﻿using System.Configuration;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Configuration;
 namespace Admin
 {
 
     public partial class MainWindow : Window
     {
-      
+
         public MainWindow()
         {
             InitializeComponent();
@@ -23,11 +29,13 @@ namespace Admin
 
 
                 {
+
                                                     
-                    MainMenu obj = new MainMenu();
+                    PanelAdministracyjny obj = new PanelAdministracyjny();
            
                     obj.Show();
                     Close();
+
 
 
                 }
@@ -43,10 +51,11 @@ namespace Admin
 
                 MessageBox.Show("Nazwa użytkownika i hasło są wymagane");
 
-            }   
+            }
 
         }
                      
      }
+
 
 }
