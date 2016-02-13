@@ -1,91 +1,34 @@
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\bin\Debug\Admin.exe.config
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\App.g.cs
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin_MarkupCompile.cache
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\bin\Debug\Admin.exe
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\bin\Debug\Admin.pdb
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\MainWindow.baml
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\MainWindow.g.cs
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin.g.resources
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin.Properties.Resources.resources
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin.exe
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin.pdb
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Window1.baml
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Window1.g.cs
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\obj\Debug\Admin_Content.g.cs
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\bin\Debug\AdminLogin.mdf
-C:\Users\Karolina\Documents\Praktyczny kurs C#\Admin\Admin\bin\Debug\AdminLogin_log.ldf
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Admin.exe.config
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.exe
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.pdb
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\MainWindow.baml
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Window1.baml
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\MainWindow.g.cs
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Window1.g.cs
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\App.g.cs
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin_MarkupCompile.cache
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.g.resources
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.Properties.Resources.resources
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Admin.exe
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Admin.pdb
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework.dll
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Npgsql.dll
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework.xml
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework6.Npgsql.dll
-C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Npgsql.dll
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\bin\Debug\Npgsql.xml
 C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\Admin.exe.config
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin.exe
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin.pdb
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\MainWindow.baml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Window1.baml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\MainWindow.g.cs
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Window1.g.cs
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\App.g.cs
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin_MarkupCompile.cache
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin.g.resources
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin.Properties.Resources.resources
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\Admin.exe
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\Admin.pdb
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\EntityFramework.dll
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\EntityFramework6.Npgsql.dll
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\Npgsql.dll
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\EntityFramework.xml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\EntityFramework6.Npgsql.xml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\bin\Debug\Npgsql.xml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\ListaWycieczek.baml
-C:\Users\53400122\Desktop\GIT\isk2-group-project-desktop\Admin\obj\Debug\ListaWycieczek.g.cs
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\Admin.exe.config
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin.exe
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin.pdb
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\Admin.exe
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\Admin.pdb
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\EntityFramework.dll
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\EntityFramework6.Npgsql.dll
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\Npgsql.dll
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\EntityFramework.xml
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\EntityFramework6.Npgsql.xml
-C:\Users\Admin\Downloads\projekt\Admin\bin\Debug\Npgsql.xml
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\MainWindow.baml
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Window1.baml
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\ListaWycieczek.baml
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\MainWindow.g.cs
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Window1.g.cs
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\ListaWycieczek.g.cs
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\App.g.cs
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin_MarkupCompile.cache
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin.g.resources
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin.Properties.Resources.resources
-C:\Users\Admin\Downloads\projekt\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\MainWindow.baml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Window1.baml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\ListaWycieczek.baml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\UsunRezerwacje.baml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\PanelAdministracyjny.baml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\DodajWycieczke.baml
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\MainWindow.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Window1.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\ListaWycieczek.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\UsunRezerwacje.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\PanelAdministracyjny.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\DodajWycieczke.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\App.g.cs
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin_MarkupCompile.cache
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin_MarkupCompile.lref
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.g.resources
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.Properties.Resources.resources
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.exe
+C:\Users\Karolina\Documents\ProjektGrupowy\Admin\Admin\obj\Debug\Admin.pdb

@@ -4,8 +4,7 @@
         Title="Panel Administracyjny"
         Width="800"
         Height="400"
-        >
-
+        Icon="palmTree.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="34*" />
@@ -40,7 +39,9 @@
                      Grid.Column="2"
                      Width="292"
                      Height="26"
+
                      Margin="145,139,0,0"
+
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top" />
         <Button x:Name="zaloguj"
@@ -53,5 +54,4 @@
                 Click="zalogujClick"
                 Content="Zaloguj" />
     </Grid>
-
 </Window>
