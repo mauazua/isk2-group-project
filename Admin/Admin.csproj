@@ -63,20 +63,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-<<<<<<< HEAD
     <Reference Include="System.Configuration" />
-=======
->>>>>>> b1bbe3cba4cf3ec6bef4583801a3fa91a165a063
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="System.Security" />
-=======
->>>>>>> b1bbe3cba4cf3ec6bef4583801a3fa91a165a063
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -97,12 +91,9 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="ListaWycieczek.xaml.cs">
       <DependentUpon>ListaWycieczek.xaml</DependentUpon>
     </Compile>
->>>>>>> b1bbe3cba4cf3ec6bef4583801a3fa91a165a063
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -119,13 +110,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
-=======
     <Page Include="ListaWycieczek.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
->>>>>>> b1bbe3cba4cf3ec6bef4583801a3fa91a165a063
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -153,13 +141,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-=======
     <None Include="App.config" />
->>>>>>> b1bbe3cba4cf3ec6bef4583801a3fa91a165a063
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -186,14 +171,11 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Resource Include="palmTree.ico" />
   </ItemGroup>
-=======
->>>>>>> b1bbe3cba4cf3ec6bef4583801a3fa91a165a063
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
