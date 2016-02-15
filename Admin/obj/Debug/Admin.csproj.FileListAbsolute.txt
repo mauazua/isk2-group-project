@@ -93,3 +93,6 @@ C:\Users\Myne\Desktop\giti\Admin\obj\Debug\Window2.baml
 C:\Users\Myne\Desktop\giti\Admin\obj\Debug\Admin.g.resources
 C:\Users\Myne\Desktop\giti\Admin\obj\Debug\Admin.Properties.Resources.resources
 C:\Users\Myne\Desktop\giti\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
+C:\Users\admin\Downloads\test\Admin\bin\Debug\Admin.exe.config
+C:\Users\admin\Downloads\test\Admin\obj\Debug\Admin.exe
+C:\Users\admin\Downloads\test\Admin\obj\Debug\Admin.pdb
