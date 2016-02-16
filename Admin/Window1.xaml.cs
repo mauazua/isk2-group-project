@@ -1,10 +1,5 @@
-<<<<<<< c35449793daca8b82ef0ec45828ecfb8e46f3744
-
 ﻿using System;
 using System.Collections.Generic;
-=======
-﻿using System.Collections.Generic;
->>>>>>> Dodanie okna dodaj wycieczke
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,20 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-<<<<<<< c35449793daca8b82ef0ec45828ecfb8e46f3744
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Data.SqlClient;
-using System.Data;
-using Npgsql;
-=======
-using System.Data.SqlClient;
-using System.Data;
-using Npgsql;
-
->>>>>>> Dodanie okna dodaj wycieczke
 
 namespace Admin
 {
@@ -46,19 +28,11 @@ namespace Admin
         {
             this.Hide();
             MessageBox.Show("Zostałeś poprawnie wylogowany");
-
+            
         }
         private void ProgramInfo(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Panel Administracyjny - Program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek ");
-        }
-
-        private void Dodaj_Wycieczke(object sender, RoutedEventArgs e)
-        {
-            Window2 okno = new Window2();
-
-            okno.Show();
-
+            MessageBox.Show("Panel Administracyjny - Program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek ");  
         }
 
         private void ListaWycieczekClick(object sender, RoutedEventArgs e)
@@ -70,18 +44,8 @@ namespace Admin
             wycieczki.ZaladujListe(w);
         }
 
-<<<<<<< c35449793daca8b82ef0ec45828ecfb8e46f3744
         
 
        
-=======
-        private void Dodaj_Wycieczke(object sender, RoutedEventArgs e)
-        {
-            Window2 okno = new Window2();
-
-            okno.Show();
-
-        }
->>>>>>> Dodanie okna dodaj wycieczke
     }
 }
