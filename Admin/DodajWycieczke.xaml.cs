@@ -18,6 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
+using Npgsql;
 using System.Runtime.Serialization;
 namespace Admin
 {
@@ -38,7 +39,6 @@ namespace Admin
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
             httpWebRequest.ContentType = "application/json; charset=utf-8";
             httpWebRequest.Method = "POST";
-
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
                 ListaWycieczek nowa = new ListaWycieczek();
@@ -49,7 +49,6 @@ namespace Admin
                 nowa.Kraj = TextBoxKraj.Text;
                 nowa.CenaZaOsobe = int.Parse(TextBoxCenaZaOsobe.Text);
                 nowa.LiczbaMiejsc = int.Parse(TextBoxLiczbaMiejsc.Text);
-
                 string jsonString = JsonHelper.JsonSerializer(nowa);
                 streamWriter.Write(jsonString);
                 streamWriter.Flush();

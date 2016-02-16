@@ -88,7 +88,6 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -103,12 +102,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ListaWycieczek.xaml.cs">
-      <DependentUpon>ListaWycieczek.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Event.cs" />
     <Compile Include="RootObject.cs" />
     <Compile Include="User.cs" />
@@ -121,7 +114,6 @@
       <DependentUpon>DodajWycieczke.xaml</DependentUpon>
     </Compile>
     <Compile Include="UsunRezerwacje.xaml.cs" />
-
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -134,13 +126,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-
-    <Page Include="Window1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ListaWycieczek.xaml">
-</Page>
     <Page Include="UsunRezerwacje.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,7 +135,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DodajWycieczke.xaml">
-
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -181,11 +165,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -212,8 +194,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-
-    <ItemGroup>
+  <ItemGroup>
     <Resource Include="palmTree.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

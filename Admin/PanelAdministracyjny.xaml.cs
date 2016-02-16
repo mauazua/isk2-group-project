@@ -25,13 +25,14 @@ namespace Admin
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 2" });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 3" });
         }
-        private void MenuItemOProgramie(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Panel administracyjny - program został opracowany przez ISK2, która jest studencką grupą, starającą się zapewnić w pełni działającą i stabilną aplikację desktopową do administracji wycieczek");
-        }
         private void MenuItemWyloguj(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+        private void MenuItemUsunRezerwacje(object sender, RoutedEventArgs e)
+        {
+            UsunRezerwacje obj = new UsunRezerwacje();
+            obj.Show();
         }
         private void ButtonDodajWycieczke(object sender, RoutedEventArgs e)
         {
@@ -44,15 +45,6 @@ namespace Admin
         private void ButtonUsunWycieczke(object sender, RoutedEventArgs e)
         {
             Wycieczki.Items.Remove(Wycieczki.SelectedItem);
-        }
-      
-
-        private void Usun_Rezerwacje(object sender, RoutedEventArgs e)
-        {
-
-            UsunRezerwacje usun = new UsunRezerwacje();
-            usun.Show();
-
         }
     }
 }

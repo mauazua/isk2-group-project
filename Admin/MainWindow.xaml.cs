@@ -17,54 +17,48 @@ using System.Data;
 using System.Configuration;
 namespace Admin
 {
-
     public partial class MainWindow : Window
     {
-
         public MainWindow()
         {
             InitializeComponent();
+            TextBoxLogin.Focus();
         }
-
-        private void zalogujClick(object sender, RoutedEventArgs e)
+        private void ButtonZaloguj(object sender, RoutedEventArgs e)
         {
-            if (loginTextBox.Text != "" && passTextBox.Password != "")
+            if (TextBoxLogin.Text != "" && PasswordBoxHaslo.Password != "")
             {
-
-
-
-                if (loginTextBox.Text == ConfigurationManager.AppSettings["username"] && passTextBox.Password == ConfigurationManager.AppSettings["password"])
+                /*
+                NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=miszamisza1; Database=AdminLogin;");
+                con.Open();
+                NpgsqlCommand com = new NpgsqlCommand("Select * from admindata where login='@UserId' and password='@word';",con);
+                com.Parameters.AddWithValue("@UserId", loginTextBox.Text);
+                com.Parameters.AddWithValue("@word", passTextBox.Password);
+                com.CommandType = CommandType.Text;
+                NpgsqlDataAdapter adapt = new NpgsqlDataAdapter(com);
+                adapt.SelectCommand = com;
+                DataSet ds = new DataSet();
+                adapt.Fill(ds);
+                con.Close();
+                int count = ds.Tables[0].Rows.Count;
+                if (count==1)
+                 */
+                if //(TextBoxLogin.Text == ConfigurationManager.AppSettings["username"] && PasswordBoxHaslo.Password == ConfigurationManager.AppSettings["password"])
+                   (TextBoxLogin.Text == "1" && PasswordBoxHaslo.Password == "1")
                 {
-
-
                     PanelAdministracyjny obj = new PanelAdministracyjny();
-
                     obj.Show();
-                    Close();
-
-
-
-
+                    this.Close();
                 }
                 else
                 {
-
-                    MessageBox.Show("Niepoprawna nazwa użytkownika lub hasło");
-
+                    MessageBox.Show("Nieprawidłowy login lub hasło");
                 }
             }
             else
             {
-
-                MessageBox.Show("Nazwa użytkownika i hasło są wymagane");
-
-
+                MessageBox.Show("Wpisz login i hasło");
             }
-
         }
-
-
-
     }
-
 }
