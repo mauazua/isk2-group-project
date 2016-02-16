@@ -18,7 +18,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
-using Npgsql;
 using System.Runtime.Serialization;
 namespace Admin
 {

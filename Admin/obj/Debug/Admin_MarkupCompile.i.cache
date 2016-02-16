@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Myne\Desktop\giti\Admin\obj\Debug\
+C:\Users\admin\Downloads\repo\Admin\obj\Debug\
 Admin
 none
 false
 DEBUG;TRACE
-C:\Users\Myne\Desktop\giti\Admin\App.xaml
-3-85327526
+C:\Users\admin\Downloads\repo\Admin\App.xaml
+6-1213386677
 
-13-457260089
-25-819167920
-MainWindow.xaml;Window1.xaml;Window2.xaml;
+192117099497
+281725182866
+MainWindow.xaml;Window1.xaml;ListaWycieczek.xaml;UsunRezerwacje.xaml;PanelAdministracyjny.xaml;DodajWycieczke.xaml;
 
 True
 
