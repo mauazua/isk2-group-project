@@ -6,11 +6,9 @@
         Width="800"
         Height="400"
         Icon="palmTree.ico">
-    <Window.InputBindings>
-        <KeyBinding Key="F1" Command="Help" />
-    </Window.InputBindings>
+    
     <Grid x:Name="win1" Margin="0,0,0,340">
-        <Menu IsMainMenu="True">
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="53*"/>
             <ColumnDefinition Width="741*"/>
