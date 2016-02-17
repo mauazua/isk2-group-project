@@ -5,15 +5,12 @@ using System.IO;
 using System.Net;
 using System.Windows;
 using System.Configuration;
-
 namespace Admin
 {
-    
     public partial class UsunRezerwacje : Window
     {
         public UsunRezerwacje()
         {
-            
             try {
                 InitializeComponent();
                 getbookings();
@@ -23,7 +20,6 @@ namespace Admin
                 MessageBox.Show(Convert.ToString(e));
             }
         }
-
         private void getbookings()
         {
             try
@@ -41,16 +37,12 @@ namespace Admin
                         string respond = reader.ReadToEnd();
                         List<RootObject> bookings = new List<RootObject>
                         { };
-                        
                         bookings = JsonConvert.DeserializeObject<List<RootObject>>(respond);
                         foreach (RootObject b in bookings)
                         {
-                            listBox.Items.Add("ID: " + b.id + "           " + "Nazwa wycieczki: " + b.@event.name + " || " + "Email użytkownika: " + b.user.email); 
-                                                       
+                            ListBoxRezerwacje.Items.Add("ID: " + b.id + "           " + "Nazwa wycieczki: " + b.@event.name + " || " + "Email użytkownika: " + b.user.email);                          
                         }
-                        
                     }
-
                 }
             }
             catch (Exception e)
@@ -71,40 +63,35 @@ namespace Admin
                 MessageBox.Show(Convert.ToString(e));
             }
         }
-
-        private void usun(object sender, RoutedEventArgs e)
+        private void ButtonUsun(object sender, RoutedEventArgs e)
         {
-            if(listBox.SelectedIndex == -1)
+            if (ListBoxRezerwacje.SelectedIndex == -1)
             {
-                MessageBox.Show("Musisz wybrać rezerwację do usunięcia!");
+                MessageBox.Show("Zaznacz pozycję");
             }
             else
             {
                 MessageBoxResult messageBoxResult = MessageBox.Show("Jesteś pewien?", "Potwierdzenie usunięcia", MessageBoxButton.OKCancel);
                     if (messageBoxResult == MessageBoxResult.OK) 
                     {
-                        
-                        string s = listBox.SelectedItem.ToString();
+                        string s = ListBoxRezerwacje.SelectedItem.ToString();
                         string str = s.Substring(4, 10);
                         int i = Convert.ToInt32(str);
                         RootObject r = new RootObject();
                         r.id = i;
                         deletebookings(r.id);
-                        MessageBox.Show(Convert.ToString("Usunieto rezerwację o numerze: " + r.id));
-                        listBox.Items.Remove(listBox.SelectedItem);
-
+                        MessageBox.Show(Convert.ToString("Usunięto rezerwację o numerze: " + r.id));
+                        ListBoxRezerwacje.Items.Remove(ListBoxRezerwacje.SelectedItem);
                     }
                     else
                     {
                         MessageBox.Show("Przerwano usuwanie");
-                    }        
-                                       
+                    }                     
             }
         }
-
-        private void anuluj(object sender, RoutedEventArgs e)
+        private void ButtonCofnij(object sender, RoutedEventArgs e)
         {
-            Close();           
+            this.Close();           
         }
     }
 }

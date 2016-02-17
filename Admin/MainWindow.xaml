@@ -1,12 +1,12 @@
 ﻿<Window x:Class="Admin.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Logowanie" Height="400" Width="1010" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
+        Title="Logowanie" Height="410" Width="1030" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Login:" HorizontalAlignment="Left" Margin="380,120,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="440,120,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxLogin"/>
-        <Label Content="Hasło:" HorizontalAlignment="Left" Margin="380,160,0,0" VerticalAlignment="Top"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="440,160,0,0" VerticalAlignment="Top" Width="120" x:Name="PasswordBoxHaslo"/>
-        <Button Content="Zaloguj" HorizontalAlignment="Left" Margin="460,210,0,0" VerticalAlignment="Top" Width="80" Click="ButtonZaloguj"/>
+        <Label Content="Login:" HorizontalAlignment="Left" Margin="380,120,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Margin="440,125,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxLogin"/>
+        <Label Content="Hasło:" HorizontalAlignment="Left" Margin="380,160,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="440,165,0,0" VerticalAlignment="Top" Width="120" x:Name="PasswordBoxHaslo"/>
+        <Button Content="Zaloguj" HorizontalAlignment="Left" Margin="460,210,0,0" VerticalAlignment="Top" Width="80" Click="ButtonZaloguj" FontSize="15"/>
     </Grid>
 </Window>

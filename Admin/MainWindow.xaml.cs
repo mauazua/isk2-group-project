@@ -43,7 +43,7 @@ namespace Admin
                 int count = ds.Tables[0].Rows.Count;
                 if (count==1)
                  */
-                if //(TextBoxLogin.Text == ConfigurationManager.AppSettings["username"] && PasswordBoxHaslo.Password == ConfigurationManager.AppSettings["password"])
+                if // (TextBoxLogin.Text == ConfigurationManager.AppSettings["username"] && PasswordBoxHaslo.Password == ConfigurationManager.AppSettings["password"])
                    (TextBoxLogin.Text == "1" && PasswordBoxHaslo.Password == "1")
                 {
                     PanelAdministracyjny obj = new PanelAdministracyjny();

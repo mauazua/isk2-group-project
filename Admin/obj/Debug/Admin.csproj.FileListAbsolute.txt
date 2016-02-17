@@ -91,7 +91,6 @@ C:\Users\admin\Downloads\repo\Admin\obj\Debug\PanelAdministracyjny.g.cs
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\DodajWycieczke.g.cs
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\App.g.cs
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin_MarkupCompile.cache
-C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin_MarkupCompile.lref
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\UsunRezerwacje.baml
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin.g.resources
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin.Properties.Resources.resources

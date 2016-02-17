@@ -102,9 +102,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Event.cs" />
-    <Compile Include="RootObject.cs" />
-    <Compile Include="User.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="Listy.cs" />
     <Compile Include="PanelAdministracyjny.xaml.cs">

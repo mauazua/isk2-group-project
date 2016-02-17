@@ -25,11 +25,7 @@ namespace Admin
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 2" });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 3" });
         }
-        private void MenuItemWyloguj(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-        private void MenuItemUsunRezerwacje(object sender, RoutedEventArgs e)
+        private void ButtonUsunRezerwacje(object sender, RoutedEventArgs e)
         {
             UsunRezerwacje obj = new UsunRezerwacje();
             obj.Show();
@@ -41,10 +37,21 @@ namespace Admin
         }
         private void ButtonEdytujWycieczke(object sender, RoutedEventArgs e)
         {
+            if (Wycieczki.SelectedIndex == -1)
+            {
+                MessageBox.Show("Zaznacz pozycję");
+            }
         }
         private void ButtonUsunWycieczke(object sender, RoutedEventArgs e)
         {
-            Wycieczki.Items.Remove(Wycieczki.SelectedItem);
+            if (Wycieczki.SelectedIndex == -1)
+            {
+                MessageBox.Show("Zaznacz pozycję");
+            }
+            else
+            {
+                Wycieczki.Items.Remove(Wycieczki.SelectedItem);
+            }
         }
     }
 }
