@@ -73,7 +73,7 @@ namespace Admin
             }
             else
             {
-                System.Windows.MessageBox.Show("Wypełnij wszystkie pola!");
+                System.Windows.MessageBox.Show("Wypełnij wszystkie pola");
             }
         }
     }

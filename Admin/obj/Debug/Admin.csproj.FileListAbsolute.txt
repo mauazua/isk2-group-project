@@ -95,3 +95,5 @@ C:\Users\admin\Downloads\repo\Admin\obj\Debug\UsunRezerwacje.baml
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin.g.resources
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin.Properties.Resources.resources
 C:\Users\admin\Downloads\repo\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
+C:\Users\admin\Downloads\repo\Admin\obj\Debug\DodajKlienta.baml
+C:\Users\admin\Downloads\repo\Admin\obj\Debug\DodajKlienta.g.cs

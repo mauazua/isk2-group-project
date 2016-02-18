@@ -31,6 +31,11 @@ namespace Admin
         public string Imie { get; set; }
         [DataMember]
         public string Nazwisko { get; set; }
+        public int Pesel { get; set; }
+        [DataMember]
+        public string DataUrodzenia { get; set; }
+        [DataMember]
+        public int NumerTelefonu { get; set; }
     }
     public class User
     {

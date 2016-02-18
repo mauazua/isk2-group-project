@@ -33,9 +33,13 @@
                             <GridViewColumn Header="Numer klienta" DisplayMemberBinding="{Binding NumerKlienta}"/>
                             <GridViewColumn Header="Imię" Width="120" DisplayMemberBinding="{Binding Imie}"/>
                             <GridViewColumn Header="Nazwisko" Width="120" DisplayMemberBinding="{Binding Nazwisko}"/>
+                            <GridViewColumn Header="Pesel" Width="120" DisplayMemberBinding="{Binding Pesel}"/>
+                            <GridViewColumn Header="Data urodzenia" Width="120" DisplayMemberBinding="{Binding DataUrodzenia}"/>
+                            <GridViewColumn Header="Numer telefonu" Width="120" DisplayMemberBinding="{Binding NumerTelefonu}"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
+                <Button Content="Dodaj" HorizontalAlignment="Left" Margin="40,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonDodajKlienta"/>
             </Grid>
         </TabItem>
     </TabControl>

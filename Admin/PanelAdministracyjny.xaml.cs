@@ -52,5 +52,10 @@ namespace Admin
             UsunRezerwacje obj = new UsunRezerwacje();
             obj.Show();
         }
+        private void ButtonDodajKlienta(object sender, RoutedEventArgs e)
+        {
+            DodajKlienta obj = new DodajKlienta();
+            obj.Show();
+        }
     }
 }

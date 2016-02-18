@@ -102,6 +102,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DodajKlienta.xaml.cs">
+      <DependentUpon>DodajKlienta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="JsonHelper.cs" />
     <Compile Include="Listy.cs" />
     <Compile Include="PanelAdministracyjny.xaml.cs">
@@ -111,6 +114,10 @@
       <DependentUpon>DodajWycieczke.xaml</DependentUpon>
     </Compile>
     <Compile Include="UsunRezerwacje.xaml.cs" />
+    <Page Include="DodajKlienta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Admin.DodajKlienta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj klienta" Height="420" Width="355" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Cofnij" HorizontalAlignment="Left" Margin="60,325,0,0" VerticalAlignment="Top" Width="80" Click="ButtonCofnij" FontSize="15"/>
+        <Label Content="Imię:" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Margin="180,35,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxImie"/>
+        <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Margin="180,75,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxNazwisko"/>
+        <Label Content="Pesel:" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Margin="180,115,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxPesel"/>
+        <Label Content="Data urodzenia:" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <DatePicker HorizontalAlignment="Left" Margin="180,155,0,0" VerticalAlignment="Top" x:Name="DatePickerDataUrodzenia"/>
+        <Label Content="Numer telefonu:" HorizontalAlignment="Left" Margin="50,191,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Margin="180,195,0,0" VerticalAlignment="Top" Width="120" x:Name="TextBoxNumerTelefonu"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="190,325,0,0" VerticalAlignment="Top" Width="80" Click="ButtonDodaj" FontSize="15"/>
+    </Grid>
+</Window>
