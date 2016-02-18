@@ -8,15 +8,6 @@ namespace Admin
 {
     [Serializable]
     [DataContract]
-    class ListaRezerwacji
-    {
-        [DataMember]
-        public string NazwaWycieczki { get; set; }
-        [DataMember]
-        public string Imie { get; set; }
-        [DataMember]
-        public string Nazwisko { get; set; }
-    }
     class ListaWycieczek
     {
         [DataMember]

@@ -3,21 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Panel administracyjny" Height="410" Width="1030" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
     <TabControl Margin="0,0,0,-345">
-        <TabItem Header="Rezerwacje" FontSize="15">
-            <Grid>
-                <ListView Height="260" Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Rezerwacje" Background="LightYellow">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn Header="Numer rezerwacji" DisplayMemberBinding="{Binding NumerRezerwacji}"/>
-                            <GridViewColumn Header="Nazwa wycieczki" Width="120" DisplayMemberBinding="{Binding NazwaWycieczki}"/>
-                            <GridViewColumn Header="Imię" Width="120" DisplayMemberBinding="{Binding Imie}"/>
-                            <GridViewColumn Header="Nazwisko" Width="120" DisplayMemberBinding="{Binding Nazwisko}"/>
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-                <Button Content="Usuń" HorizontalAlignment="Left" Margin="40,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonUsunRezerwacje" FontSize="15"/>
-            </Grid>
-        </TabItem>
         <TabItem Header="Wycieczki" FontSize="15">
             <Grid>
                 <ListView Height="260" Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Wycieczki" Background="LightYellow">
@@ -37,6 +22,7 @@
                 <Button Content="Dodaj" HorizontalAlignment="Left" Margin="40,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonDodajWycieczke" FontSize="15"/>
                 <Button Content="Edytuj" HorizontalAlignment="Left" Margin="160,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonEdytujWycieczke" FontSize="15"/>
                 <Button Content="Usuń" HorizontalAlignment="Left" Margin="280,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonUsunWycieczke" FontSize="15"/>
+                <Button Content="Rezerwacje" HorizontalAlignment="Left" Margin="400,297,0,0" VerticalAlignment="Top" Width="100" Click="ButtonRezerwacje" FontSize="15"/>
             </Grid>
         </TabItem>
         <TabItem Header="Klienci" FontSize="15">

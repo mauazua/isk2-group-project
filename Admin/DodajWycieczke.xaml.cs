@@ -20,6 +20,8 @@ using System.Data.SqlClient;
 using System.Data;
 using Npgsql;
 using System.Runtime.Serialization;
+using System.Configuration;
+using Newtonsoft.Json;
 namespace Admin
 {
     public partial class DodajWycieczke : Window
@@ -35,29 +37,43 @@ namespace Admin
         }
         private void ButtonDodaj(object sender, RoutedEventArgs e)
         {
-            var webAddr = "http://192.168.23.128:3000/api/events";
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
-            httpWebRequest.ContentType = "application/json; charset=utf-8";
-            httpWebRequest.Method = "POST";
-            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            if (TextBoxNazwaWycieczki.Text != "" & TextBoxMiasto.Text != "" & TextBoxKraj.Text != "" & TextBoxCenaZaOsobe.Text != "" & TextBoxLiczbaMiejsc.Text != "" & DatePickerDataRozpoczecia.Text != "" & DatePickerDataZakonczenia.Text != "")
             {
-                ListaWycieczek nowa = new ListaWycieczek();
-                nowa.NazwaWycieczki = TextBoxNazwaWycieczki.Text;
-                nowa.DataRozpoczecia = DatePickerDataRozpoczecia.Text;
-                nowa.DataZakonczenia = DatePickerDataZakonczenia.Text;
-                nowa.Miasto = TextBoxMiasto.Text;
-                nowa.Kraj = TextBoxKraj.Text;
-                nowa.CenaZaOsobe = int.Parse(TextBoxCenaZaOsobe.Text);
-                nowa.LiczbaMiejsc = int.Parse(TextBoxLiczbaMiejsc.Text);
-                string jsonString = JsonHelper.JsonSerializer(nowa);
-                streamWriter.Write(jsonString);
-                streamWriter.Flush();
+                try
+                {
+                    var request = (HttpWebRequest)WebRequest.Create(ConfigurationManager.AppSettings["Events-URL"]);
+                    request.ContentType = "application/json; charset=utf-8";
+                    request.Method = "POST";
+                    request.Timeout = 2000;
+                    request.Headers.Add(ConfigurationManager.AppSettings["header1"], ConfigurationManager.AppSettings["token"]);
+                    request.Headers.Add(ConfigurationManager.AppSettings["header2"], ConfigurationManager.AppSettings["email"]);
+                    using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+                    {
+                        ListaWycieczek Wycieczka = new ListaWycieczek();
+                        Wycieczka.NazwaWycieczki = TextBoxNazwaWycieczki.Text;
+                        Wycieczka.DataRozpoczecia = DatePickerDataRozpoczecia.Text;
+                        Wycieczka.DataZakonczenia = DatePickerDataZakonczenia.Text;
+                        Wycieczka.Miasto = TextBoxMiasto.Text;
+                        Wycieczka.Kraj = TextBoxKraj.Text;
+                        Wycieczka.CenaZaOsobe = int.Parse(TextBoxCenaZaOsobe.Text);
+                        Wycieczka.LiczbaMiejsc = int.Parse(TextBoxLiczbaMiejsc.Text);
+                        var json = JsonConvert.SerializeObject(Wycieczka);
+                        streamWriter.Write(json);
+                        streamWriter.Flush();
+                    }
+                    var httpResponse = (HttpWebResponse)request.GetResponse();
+                    using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                    {
+                        var result = streamReader.ReadToEnd();
+                        System.Windows.MessageBox.Show(result);
+                    }
+                }
+                catch (Exception error)
+                { System.Windows.MessageBox.Show(Convert.ToString(error)); }
             }
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            else
             {
-                var result = streamReader.ReadToEnd();
-                System.Windows.MessageBox.Show(result);
+                System.Windows.MessageBox.Show("Wypełnij wszystkie pola!");
             }
         }
     }

@@ -18,17 +18,11 @@ namespace Admin
         public PanelAdministracyjny()
         {
             InitializeComponent();
-            List<ListaRezerwacji> ListaRezerwacjiPozycja = new List<ListaRezerwacji>();
             List<ListaWycieczek> ListaWycieczekPozycja = new List<ListaWycieczek>();
             List<ListaKlientow> ListaKlientowPozycja = new List<ListaKlientow>();
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 1" });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 2" });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Test 3" });
-        }
-        private void ButtonUsunRezerwacje(object sender, RoutedEventArgs e)
-        {
-            UsunRezerwacje obj = new UsunRezerwacje();
-            obj.Show();
         }
         private void ButtonDodajWycieczke(object sender, RoutedEventArgs e)
         {
@@ -52,6 +46,11 @@ namespace Admin
             {
                 Wycieczki.Items.Remove(Wycieczki.SelectedItem);
             }
+        }
+        private void ButtonRezerwacje(object sender, RoutedEventArgs e)
+        {
+            UsunRezerwacje obj = new UsunRezerwacje();
+            obj.Show();
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿<Window x:Class="Admin.UsunRezerwacje"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Usuń rezerwację" Height="410" Width="550" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
+        Title="Rezerwacje" Height="410" Width="800" Icon="palmTree.ico" WindowStartupLocation="CenterScreen">
     <Grid>
-        <ListBox x:Name="ListBoxRezerwacje" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="495" Height="260" Background="LightYellow"/>
+        <Label Content="Rezerwacje" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <ListBox x:Name="ListBoxRezerwacje" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="740" Height="260" Background="LightYellow"/>
         <Button Content="Usuń" HorizontalAlignment="Left" Margin="160,327,0,0" VerticalAlignment="Top" Width="80" Click="ButtonUsun" FontSize="15"/>
         <Button Content="Cofnij" HorizontalAlignment="Left" Margin="40,327,0,0" VerticalAlignment="Top" Width="80" Click="ButtonCofnij" FontSize="15"/>
     </Grid>
