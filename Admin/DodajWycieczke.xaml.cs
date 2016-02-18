@@ -37,7 +37,7 @@ namespace Admin
         }
         private void ButtonDodaj(object sender, RoutedEventArgs e)
         {
-            if (TextBoxNazwaWycieczki.Text != "" & TextBoxMiasto.Text != "" & TextBoxKraj.Text != "" & TextBoxCenaZaOsobe.Text != "" & TextBoxLiczbaMiejsc.Text != "" & DatePickerDataRozpoczecia.Text != "" & DatePickerDataZakonczenia.Text != "")
+            if (TextBoxNazwaWycieczki.Text != "" & DatePickerDataRozpoczecia.Text != "" & DatePickerDataZakonczenia.Text != "" & TextBoxMiasto.Text != "" & TextBoxKraj.Text != "" & TextBoxCenaZaOsobe.Text != "" & TextBoxLiczbaMiejsc.Text != "")
             {
                 try
                 {
