@@ -26,23 +26,23 @@
             </Grid>
         </TabItem>
         <TabItem Header="Klienci" FontSize="15">
-            <Grid Margin="0,-54,0,54">
-                <ListView Height="260" Margin="20,68,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Klienci" Background="LightYellow">
+            <Grid>
+                <ListView Height="260" Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Klienci" Background="LightYellow">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Numer klienta" DisplayMemberBinding="{Binding NumerKlienta}"/>
+                            <GridViewColumn Header="Numer rezerawcji" Width="120" DisplayMemberBinding="{Binding NumerRezerwacji}"/>
                             <GridViewColumn Header="Imię" Width="120" DisplayMemberBinding="{Binding Imie}"/>
                             <GridViewColumn Header="Nazwisko" Width="120" DisplayMemberBinding="{Binding Nazwisko}"/>
                             <GridViewColumn Header="Pesel" Width="120" DisplayMemberBinding="{Binding Pesel}"/>
                             <GridViewColumn Header="Data urodzenia" Width="120" DisplayMemberBinding="{Binding DataUrodzenia}"/>
                             <GridViewColumn Header="Numer telefonu" Width="120" DisplayMemberBinding="{Binding NumerTelefonu}"/>
-                            <GridViewColumn Header="Adres E-Mail" Width="120" DisplayMemberBinding="{Binding AdresEmail}"/>
-                            <GridViewColumn Header="Numer rezerawcji" Width="120" DisplayMemberBinding="{Binding NumerRezerwacji}"/>
+                            <GridViewColumn Header="Adres email" Width="120" DisplayMemberBinding="{Binding AdresEmail}"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
-                <Button Content="Dodaj" HorizontalAlignment="Left" Margin="40,356,0,0" VerticalAlignment="Top" Width="80" Click="ButtonDodajKlienta"/>
-                <Button Content="Usuń" HorizontalAlignment="Left" Margin="148,356,0,0" VerticalAlignment="Top" Width="80"/>
+                <Button Content="Dodaj" HorizontalAlignment="Left" Margin="40,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonDodajKlienta"/>
+                <Button Content="Usuń" HorizontalAlignment="Left" Margin="160,297,0,0" VerticalAlignment="Top" Width="80" Click="ButtonUsunKlienta"/>
             </Grid>
         </TabItem>
     </TabControl>

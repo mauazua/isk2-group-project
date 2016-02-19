@@ -43,13 +43,13 @@ namespace Admin
                 httpWebRequest.Method = "POST";
                 using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
                 {
-                    ListaKlientow nowa = new ListaKlientow();
-                    nowa.Imie = TextBoxImie.Text;
-                    nowa.Nazwisko = TextBoxNazwisko.Text;
-                    nowa.Pesel = int.Parse(TextBoxPesel.Text);
-                    nowa.DataUrodzenia = DatePickerDataUrodzenia.Text;
-                    nowa.NumerTelefonu = int.Parse(TextBoxNumerTelefonu.Text);
-                    string jsonString = JsonHelper.JsonSerializer(nowa);
+                    ListaKlientow Klient = new ListaKlientow();
+                    Klient.Imie = TextBoxImie.Text;
+                    Klient.Nazwisko = TextBoxNazwisko.Text;
+                    Klient.Pesel = int.Parse(TextBoxPesel.Text);
+                    Klient.DataUrodzenia = DatePickerDataUrodzenia.Text;
+                    Klient.NumerTelefonu = int.Parse(TextBoxNumerTelefonu.Text);
+                    string jsonString = JsonHelper.JsonSerializer(Klient);
                     streamWriter.Write(jsonString);
                     streamWriter.Flush();
                 }

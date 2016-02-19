@@ -20,14 +20,14 @@ namespace Admin
             InitializeComponent();
             List<ListaWycieczek> ListaWycieczekPozycja = new List<ListaWycieczek>();
             List<ListaKlientow> ListaKlientowPozycja = new List<ListaKlientow>();
-            Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Czechy", Miasto = "Praga", Kraj = "Czechy", CenaZaOsobe = 500, LiczbaMiejsc = 20  });
+            Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Czechy", Miasto = "Praga", Kraj = "Czechy", CenaZaOsobe = 500, LiczbaMiejsc = 20 });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Brazylia", Miasto = "Rio", Kraj = "Brazylia", CenaZaOsobe = 4000, LiczbaMiejsc = 30 });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Francja", Miasto = "Paryż", Kraj = "Francja", CenaZaOsobe = 2500, LiczbaMiejsc = 25 });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Niemcy", Miasto = "Berlin", Kraj = "Niemcy", CenaZaOsobe = 2000, LiczbaMiejsc = 15 });
             Wycieczki.Items.Add(new ListaWycieczek() { NazwaWycieczki = "Włochy", Miasto = "Rzym", Kraj = "Włochy", CenaZaOsobe = 3500, LiczbaMiejsc = 25 });
-            Klienci.Items.Add(new ListaKlientow() { Imie = "Artur", Nazwisko = "Kowalski", NumerTelefonu = 508434678 });
-            Klienci.Items.Add(new ListaKlientow() { Imie = "Stefan", Nazwisko = "Nowak", NumerTelefonu = 675935254 });
-            Klienci.Items.Add(new ListaKlientow() { Imie = "Marcin", Nazwisko = "Mirecki", NumerTelefonu = 785954223 });
+            Klienci.Items.Add(new ListaKlientow() { Imie = "Artur", Nazwisko = "Kowalski", Pesel = 90010112345, NumerTelefonu = 508434678, AdresEmail = "arturkowalski@mail.pl" });
+            Klienci.Items.Add(new ListaKlientow() { Imie = "Stefan", Nazwisko = "Nowak", Pesel = 90010112346, NumerTelefonu = 675935254, AdresEmail = "stefannowak@mail.pl" });
+            Klienci.Items.Add(new ListaKlientow() { Imie = "Marcin", Nazwisko = "Mirecki", Pesel = 90010112347, NumerTelefonu = 785954223, AdresEmail = "marcinmirecki@mail.pl" });
 
         }
         private void ButtonDodajWycieczke(object sender, RoutedEventArgs e)
@@ -62,6 +62,17 @@ namespace Admin
         {
             DodajKlienta obj = new DodajKlienta();
             obj.Show();
+        }
+        private void ButtonUsunKlienta(object sender, RoutedEventArgs e)
+        {
+            if (Klienci.SelectedIndex == -1)
+            {
+                MessageBox.Show("Zaznacz pozycję");
+            }
+            else
+            {
+                Klienci.Items.Remove(Klienci.SelectedItem);
+            }
         }
     }
 }
